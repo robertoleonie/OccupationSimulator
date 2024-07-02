@@ -4,7 +4,7 @@ class Approaches() :
     def __init__(self) :
         pass
 
-    def completely_random(n) :
+    def completely_random(self, n) :
         facility = [0] * n
         index_list = [i for i in range(0,n)]
         steps = 0
@@ -18,7 +18,7 @@ class Approaches() :
 
         return steps
 
-    def individualist(n) :
+    def individualist(self, n) :
         facility = [0] * n
         index_list = [i for i in range(0,n)]
         steps = 0
@@ -37,7 +37,7 @@ class Approaches() :
 
         return steps
 
-    def altruistic(n) :
+    def altruistic(self, n) :
         facility = [0] * n
         index_list = []
         steps = 0
@@ -57,7 +57,7 @@ class Approaches() :
 
         return steps
 
-    def cleaner(n) :
+    def cleaner(self, n) :
         facility = [0] * n
         index_list = []
         steps = 0
@@ -77,7 +77,7 @@ class Approaches() :
 
         return steps
 
-    def discomfort_optimization(n, users) :
+    def discomfort_optimization(self, n, users) :
         def find_indices(input_list, element):
             return [i for i, x in enumerate(input_list) if x == element]
 
