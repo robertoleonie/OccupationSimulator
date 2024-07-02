@@ -125,7 +125,7 @@ class Simulation() :
                 print(new_line)
                 df.loc[len(df)] = new_line
 
-        df.to_csv('all_metrics.csv', index=False, encoding='latin-1')
+        df.to_csv('all_metrics.csv', sep=',', index=False, encoding='latin-1')
 
 class Plot() :
     def __init__(self, n_inputs) :
