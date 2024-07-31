@@ -1,0 +1,79 @@
+Posições,Abordagem,Tempo Médio,Desvio padrão do tempo,Incômodo Médio,Desvio do Incômodo
+1,completamente aleatória,1.0,0.0,0.0,0.0
+1,individualista,1.0,0.0,0.0,0.0
+1,altruística,1.0,0.0,0.0,0.0
+1,individualista-altruística,1.0,0.0,0.0,0.0
+1,faxineiro,1.0,0.0,0.0,0.0
+1,otimização do incômodo,0.0,0.0,0.0,0.0
+2,completamente aleatória,2.0,0.0,2.0,0.0
+2,individualista,1.0,0.0,0.0,0.0
+2,altruística,1.0,0.0,0.0,0.0
+2,individualista-altruística,1.0,0.0,0.0,0.0
+2,faxineiro,1.0,0.0,0.0,0.0
+2,otimização do incômodo,1.0,0.0,0.0,0.0
+3,completamente aleatória,2.329,0.469,2.668,0.949
+3,individualista,1.642,0.464,0.0,0.0
+3,altruística,2.0,0.0,0.0,0.0
+3,individualista-altruística,2.0,0.0,0.0,0.0
+3,faxineiro,1.0,0.0,0.0,0.0
+3,otimização do incômodo,1.0,0.0,0.0,0.0
+5,completamente aleatória,2.672,0.648,2.408,0.841
+5,individualista,2.48,0.498,0.0,0.0
+5,altruística,3.0,0.0,0.0,0.0
+5,individualista-altruística,3.0,0.0,0.0,0.0
+5,faxineiro,2.0,0.0,0.0,0.0
+5,otimização do incômodo,2.0,0.0,0.0,0.0
+10,completamente aleatória,3.469,1.046,2.266,0.646
+10,individualista,4.641,0.477,0.0,0.0
+10,altruística,5.0,0.0,0.0,0.0
+10,individualista-altruística,5.0,0.0,0.0,0.0
+10,faxineiro,5.0,0.0,0.0,0.0
+10,otimização do incômodo,5.0,0.0,0.23,0.641
+20,completamente aleatória,4.475,1.586,2.19,0.611
+20,individualista,8.922,0.634,0.0,0.0
+20,altruística,10.0,0.0,0.0,0.0
+20,individualista-altruística,10.0,0.0,0.0,0.0
+20,faxineiro,10.0,0.0,0.0,0.0
+20,otimização do incômodo,10.0,0.0,1.608,1.174
+30,completamente aleatória,5.475,2.106,2.122,0.521
+30,individualista,13.257,0.765,0.0,0.0
+30,altruística,15.0,0.0,0.0,0.0
+30,individualista-altruística,15.0,0.0,0.0,0.0
+30,faxineiro,15.0,0.0,0.0,0.0
+30,otimização do incômodo,15.0,0.0,3.034,1.538
+50,completamente aleatória,6.958,2.778,2.11,0.504
+50,individualista,21.929,0.972,0.0,0.0
+50,altruística,25.0,0.0,0.0,0.0
+50,individualista-altruística,25.0,0.0,0.0,0.0
+50,faxineiro,25.0,0.0,0.0,0.0
+50,otimização do incômodo,25.0,0.0,5.6,1.914
+100,completamente aleatória,9.566,4.212,2.094,0.392
+100,individualista,43.465,1.343,0.0,0.0
+100,altruística,50.0,0.0,0.0,0.0
+100,individualista-altruística,50.0,0.0,0.0,0.0
+100,faxineiro,50.0,0.0,0.0,0.0
+100,otimização do incômodo,50.0,0.0,12.518,2.662
+200,completamente aleatória,12.884,6.184,2.066,0.33
+200,individualista,86.823,1.877,0.0,0.0
+200,altruística,100.0,0.0,0.0,0.0
+200,individualista-altruística,100.0,0.0,0.0,0.0
+200,faxineiro,100.0,0.0,0.0,0.0
+200,otimização do incômodo,100.0,0.0,26.068,3.995
+300,completamente aleatória,15.611,7.827,2.052,0.347
+300,individualista,130.046,2.465,0.0,0.0
+300,altruística,150.0,0.0,0.0,0.0
+300,individualista-altruística,150.0,0.0,0.0,0.0
+300,faxineiro,150.0,0.0,0.0,0.0
+300,otimização do incômodo,150.0,0.0,39.602,4.604
+500,completamente aleatória,20.066,9.862,2.036,0.259
+500,individualista,216.441,3.095,0.0,0.0
+500,altruística,250.0,0.0,0.0,0.0
+500,individualista-altruística,250.0,0.0,0.0,0.0
+500,faxineiro,250.0,0.0,0.0,0.0
+500,otimização do incômodo,250.0,0.0,66.456,6.057
+1000,completamente aleatória,28.143,14.149,2.026,0.28
+1000,individualista,432.595,4.395,0.0,0.0
+1000,altruística,500.0,0.0,0.0,0.0
+1000,individualista-altruística,500.0,0.0,0.0,0.0
+1000,faxineiro,500.0,0.0,0.0,0.0
+1000,otimização do incômodo,500.0,0.0,134.22,8.638
