@@ -9,6 +9,8 @@ class Approaches() :
             return [i for i, x in enumerate(input_list) if x == element]
 
     def completely_random(self, n, occupyAll=False) :
+        print('ABORDAGEM COMPLETAMENTE ALEATORIA:')
+
         facility = [0] * n
         index_list = [i for i in range(0,n)]
         steps = 0
@@ -31,9 +33,16 @@ class Approaches() :
             discomfort = self.helper.count_discomfort(facility)
             disc_list.append(discomfort)
 
+            print(f'Indice escolhido: {idx}')
+            print(f'Instalacao: {facility}')
+            print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort, disc_list
 
     def individualist(self, n, occupyAll=False) :
+        print('ABORDAGEM INDIVIDUALISTA: ')
+
         facility = [0] * n
         index_list = [i for i in range(0,n)]
         steps = 0
@@ -56,9 +65,16 @@ class Approaches() :
             discomfort = self.helper.count_discomfort(facility)
             disc_list.append(discomfort)
 
+            print(f'Indice escolhido: {idx}')
+            print(f'Instalacao: {facility}')
+            print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort, disc_list
 
     def altruistic(self, n, occupyAll=False) :
+        print('ABORDAGEM ALTRUÍSTICA: ')
+
         facility = [0] * n
         index_list = []
         steps = 0
@@ -84,9 +100,16 @@ class Approaches() :
             discomfort = self.helper.count_discomfort(facility)
             disc_list.append(discomfort)
 
+            print(f'Indice escolhido: {idx}')
+            print(f'Instalacao: {facility}')
+            print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort, disc_list
 
-    def individualist_altruistic(self, n, occupyAll=False):
+    def individualist_altruistic(self, n, occupyAll=False) :
+        print('ABORDAGEM INDIVIDUALISTA-ALTRUÍSTICA: ')
+
         facility = [0] * n
         index_list = [i for i in range(n)]
         steps = 0
@@ -102,6 +125,10 @@ class Approaches() :
             steps += 1
             discomfort = self.helper.count_discomfort(facility)
             disc_list.append(discomfort)
+
+            print(f'Indice escolhido: {idx}')
+            print(f'Instalacao: {facility}')
+            print(f'Coef. incomodo global: {discomfort}')
 
 
         else :
@@ -129,6 +156,10 @@ class Approaches() :
                 index_list.remove(idx)
                 discomfort = self.helper.count_discomfort(facility)
                 disc_list.append(discomfort)
+
+                print(f'Indice escolhido: {idx}')
+                print(f'Instalacao: {facility}')
+                print(f'Coef. incomodo global: {discomfort}')
 
                 # print(f'Instalacao: {facility}')
                 # print(f'Lista de indices: {index_list}')
@@ -181,9 +212,16 @@ class Approaches() :
                 discomfort = self.helper.count_discomfort(facility)
                 disc_list.append(discomfort)
 
+                print(f'Indice escolhido: {idx}')
+                print(f'Instalacao: {facility}')
+                print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort, disc_list #, facility
 
     def cleaner(self, n) :
+        print('ABORDAGEM DO FAXINEIRO: ')
+
         facility = [0] * n
         index_list = []
         steps = 0
@@ -205,11 +243,19 @@ class Approaches() :
 
             steps += 1
 
+            print(f'Indice escolhido: {idx}')
+            print(f'Instalacao: {facility}')
+
         discomfort = self.helper.count_discomfort(facility)
 
+        print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort
 
     def discomfort_optimization(self, n, users) :
+        print('ABORDAGEM DE OTIMIZACAO DO INCOMODO: ')
+
         if (users > n) :
             raise ValueError("Erro: número de usuários maior do que a capacidade da instalação!\n")
 
@@ -228,11 +274,17 @@ class Approaches() :
                     facility[0] = 1
                     index_list.remove(0)
                     neighborhood[1] -= 1
+                    print(f'Indice escolhido: {0}')
+                    print(f'Instalacao: {facility}')
+                    print(f'Mapa de adjacencias: {neighborhood}')
                     
                 elif (not facility[n-1]) :
                     facility[n-1] = 1
                     index_list.remove(n-1)
                     neighborhood[n-2] -= 1
+                    print(f'Indice escolhido: {n-1}')
+                    print(f'Instalacao: {facility}')
+                    print(f'Mapa de adjacencias: {neighborhood}')
                 
                 else :
                     two_neighbors_indices = self.find_indices(neighborhood, 2)
@@ -246,6 +298,10 @@ class Approaches() :
                             index_list.remove(idx)
                             neighborhood[idx-1] -= 1
                             neighborhood[idx+1] -= 1
+
+                            print(f'Indice escolhido: {idx}')
+                            print(f'Instalacao: {facility}')
+                            print(f'Mapa de adjacencias: {neighborhood}')
                             break
                     
                     else :
@@ -257,6 +313,10 @@ class Approaches() :
                                 index_list.remove(idx)
                                 neighborhood[idx-1] -= 1
                                 neighborhood[idx+1] -= 1
+
+                                print(f'Indice escolhido: {idx}')
+                                print(f'Instalacao: {facility}')
+                                print(f'Mapa de adjacencias: {neighborhood}')
                                 break
 
                         else :
@@ -267,17 +327,29 @@ class Approaches() :
                                 neighborhood[idx-1] -= 1
                                 neighborhood[idx+1] -= 1
 
+                                print(f'Indice escolhido: {idx}')
+                                print(f'Instalacao: {facility}')
+                                print(f'Mapa de adjacencias: {neighborhood}')
+
             else :
                 # testa se o recurso mais à direita está disponível    
                 if (not facility[n-1]) :
                     facility[n-1] = 1
                     index_list.remove(n-1)
                     neighborhood[n-2] -= 1
+
+                    print(f'Indice escolhido: {n-1}')
+                    print(f'Instalacao: {facility}')
+                    print(f'Mapa de adjacencias: {neighborhood}')
                 
                 elif (not facility[0]) :
                     facility[0] = 1
                     index_list.remove(0)
                     neighborhood[1] -= 1
+
+                    print(f'Indice escolhido: {0}')
+                    print(f'Instalacao: {facility}')
+                    print(f'Mapa de adjacencias: {neighborhood}')
                 
                 else :
                     two_neighbors_indices = self.find_indices(neighborhood, 2)
@@ -291,6 +363,10 @@ class Approaches() :
                             index_list.remove(idx)
                             neighborhood[idx-1] -= 1
                             neighborhood[idx+1] -= 1
+
+                            print(f'Indice escolhido: {idx}')
+                            print(f'Instalacao: {facility}')
+                            print(f'Mapa de adjacencias: {neighborhood}')
                             break
 
                     else :
@@ -302,6 +378,10 @@ class Approaches() :
                                 index_list.remove(idx)
                                 neighborhood[idx-1] -= 1
                                 neighborhood[idx+1] -= 1
+
+                                print(f'Indice escolhido: {idx}')
+                                print(f'Instalacao: {facility}')
+                                print(f'Mapa de adjacencias: {neighborhood}')
                                 break
 
                         else :
@@ -312,10 +392,28 @@ class Approaches() :
                                     neighborhood[idx-1] -= 1
                                     neighborhood[idx+1] -= 1
 
+                                    print(f'Indice escolhido: {idx}')
+                                    print(f'Instalacao: {facility}')
+                                    print(f'Mapa de adjacencias: {neighborhood}')
+
             users -= 1
             steps += 1
 
             discomfort = self.helper.count_discomfort(facility)
             disc_list.append(discomfort)
 
+            print(f'Coef. incomodo global: {discomfort}')
+
+        print()
         return steps, discomfort, disc_list
+
+def main() :
+    ap = Approaches()
+    ap.completely_random(5)
+    ap.individualist(5)
+    ap.altruistic(5)
+    ap.individualist_altruistic(5)
+    ap.cleaner(5)
+    ap.discomfort_optimization(5, 3)
+
+main()
