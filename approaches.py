@@ -253,8 +253,8 @@ class Approaches() :
         print()
         return steps, discomfort
 
-    def discomfort_optimization(self, n, users) :
-        print('ABORDAGEM DE OTIMIZACAO DO INCOMODO: ')
+    def discomfort_minimization(self, n, users) :
+        print('ABORDAGEM DE MINIMIZACAO DO INCOMODO: ')
 
         if (users > n) :
             raise ValueError("Erro: número de usuários maior do que a capacidade da instalação!\n")
@@ -414,6 +414,6 @@ def main() :
     ap.altruistic(5)
     ap.individualist_altruistic(5)
     ap.cleaner(5)
-    ap.discomfort_optimization(5, 3)
+    ap.discomfort_minimization(5, 3)
 
 main()
